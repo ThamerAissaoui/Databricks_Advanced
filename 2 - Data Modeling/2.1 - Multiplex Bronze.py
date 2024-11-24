@@ -7,6 +7,24 @@
 
 # COMMAND ----------
 
+# MAGIC %md
+# MAGIC ### /////////////////////////  Ignore, this is for CLI tests ////////////////////////////////
+
+# COMMAND ----------
+
+dbutils.fs.ls(f"dbfs:/mnt/uploads/")
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ### ///////////////////////////////////////////////////////////////////////////////////////
+
+# COMMAND ----------
+
+db_password = dbutils.secrets.get(scope="thameur", key="db_password")
+
+# COMMAND ----------
+
 # MAGIC %run ../Includes/Copy-Datasets
 
 # COMMAND ----------
